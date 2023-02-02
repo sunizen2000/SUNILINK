@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZOOMLINK</title>
+
+	<style>
+		h1 {
+			font-size:48px;
+			front-weight: bold;
+			text-align: center;
+			height: 100px;
+		}
+
+		#box {
+			height: 1000px;
+			background-color: #bddef4;
+			text-align: center;
+			margin: 25px 0px 25px 0px;
+		}
+
+		#box .schedule {
+			height: 60%;
+			width: 100%;
+			float: right;
+			padding: 90px 0px 0px 0px;
+		}
+
+		#box .bottonBOX {
+			height: 90%;
+			width: 40%;
+			border-radius: 25px;
+			background-color: rgb(207,228,242);
+			margin: 25px 25px 25px 25px;
+			padding: 60px 30px 60px 30px;
+		}
+
+		#box .TextBOX{
+			height: 93%;
+			width: 40%;
+			float: right;
+			padding: 0px 10px;
+			font-size: 200%
+		}
+		*,
+		*:before,
+		*:after {
+		  -webkit-box-sizing: inherit;
+		  box-sizing: inherit;
+		}
+
+		html {
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		  font-size: 62.5%;
+		}
+
+		.btn,
+		a.btn,
+		button.btn {
+		  font-size: 1.6rem;
+		  font-weight: 700;
+		  line-height: 1.5;
+		  position: relative;
+		  display: inline-block;
+		  padding: 1rem 4rem;
+		  cursor: pointer;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+		  text-align: center;
+		  vertical-align: middle;
+		  text-decoration: none;
+		  letter-spacing: 0.1em;
+		  color: #212529;
+		  border-radius: 0.5rem;
+		}
+
+		a.btn-border {
+		  margin-bottom: 12px;
+		  padding: 0;
+
+		  -webkit-transition: all 0.3s;
+
+		  transition: all 0.3s;
+
+		  border-radius: 0;
+		}
+
+		a.btn-border span {
+		  position: relative;
+
+		  display: block;
+
+		  padding: 1.25rem 3rem;
+
+		  color: #000;
+		  border: 2px solid #000;
+		  border-radius: 0.5rem;
+		  background: #fff;
+		}
+
+		a.btn-border:before {
+		  position: absolute;
+		  bottom: -8px;
+		  left: 0;
+
+		  display: block;
+
+		  width: 100%;
+		  height: 14px;
+
+		  content: "";
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+
+		  border: 2px solid #000;
+		  border-top: 1px solid #000;
+		  border-radius: 0 0 0.5rem 0.5rem;
+		  background-image: -webkit-repeating-linear-gradient(
+			135deg,
+			#000,
+			#000 1px,
+			transparent 2px,
+			transparent 5px
+		  );
+		  background-image: repeating-linear-gradient(
+			-45deg,
+			#000,
+			#000 1px,
+			transparent 2px,
+			transparent 5px
+		  );
+		  background-size: 7px 7px;
+
+		  -webkit-backface-visibility: hidden;
+
+		  backface-visibility: hidden;
+		}
+
+		a.btn-border:hover {
+		  -webkit-transform: translate(0, 3px);
+		  transform: translate(0, 3px);
+		}
+
+		a.btn-border:hover:before {
+		  bottom: -5px;
+		}
+
+		a.btn-border:active {
+		  -webkit-transform: translate(0, 7px);
+		  transform: translate(0, 7px);
+		}
+
+		a.btn-border:active:before {
+		  bottom: -1px;
+		}
+	</style>
+		
+	
+</head>
+<body>
+	<h1>ZOOMLINK</h1>
+	<div id="box">
+		<p style="color: #bddef4;">Hello</p>
+		<div class="TextBOX">
+				<h2>授業時間割</h2>
+				<p style="margin: 10px 25px 10px 25px;">SHR     8:40～ 8:45   昼休み 12:30～13:10</p>
+				<p style="margin: 10px 25px 10px 25px;">1時限   8:50～ 9:30  5時限  13:10～13:50</p>
+				<p style="margin: 10px 20px 10px 25px;">2時限   9:50～10:30  6時限  14:10～14:50</p>
+				<p style="margin: 10px 77px 10px 25px;">3時限  10:50～11:30 SHR    14:50～     </p>
+				<p style="margin: 10px 210px 10px 25px;">4時限  11:50～12:30</p>
+				<img class="schedule" src="img/rike.png" alt="">
+		</div>
+		
+		<div class="bottonBOX">
+			<a class="btn btn-border" id="button1"><span>岡本(コミ英)</span></a>
+			<a class="btn btn-border" id="button2"><span>仲野(家庭科)</span></a>
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button3"><span>鈴木(数学Ⅱ)</span></a>
+			<a class="btn btn-border" id="button4"><span>藤倉(古典B)</span></a>
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button5"><span>青木(現代文)</span></a>			
+			<a class="btn btn-border" id="button6"><span>立田(英会話)</span></a>			
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button7"><span>高着(生物)</span></a>
+			<a class="btn btn-border" id="button8"><span>松井(英表)</span></a>
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button9"><span>猪狩(保健)</span></a>
+			<a class="btn btn-border" id="button10"><span>小倉(物理)</span></a>
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button11"><span>藤田(科学)</span></a>
+			<a class="btn btn-border" id="button12"><span>益川(歴史)</span></a>
+			<p style="color: rgb(207,228,242);">a</p>
+			<a class="btn btn-border" id="button13"><span>中島(音楽)</span></a>
+			<a class="btn btn-border" id="button14"><span>先生ID表</span></a>
+		</div>
+		<p>ボタンをクリックするとその人のZOOMに飛びます</p>
+	</div>
+	
+	
+</body>
+<script>
+		// コードを記述する
+		document.getElementById("button1").addEventListener("click", function() {
+			window.open("https://zoom.us/j/9478311386?pwd=6423");
+		});
+		document.getElementById("button2").addEventListener("click", function() {
+			window.open("https://zoom.us/j/6081073136?pwd=3768");
+		});
+		document.getElementById("button3").addEventListener("click", function() {
+			window.open("https://zoom.us/j/8678087038?pwd=8547");
+		});
+		document.getElementById("button4").addEventListener("click", function() {
+			window.open("https://zoom.us/j/5029162078?pwd=8823");
+		});
+		document.getElementById("button5").addEventListener("click", function() {
+			window.open("https://zoom.us/j/5560337845?pwd=8026");
+		});
+		document.getElementById("button6").addEventListener("click", function() {
+			window.open("https://zoom.us/j/5815753989?pwd=8594");
+		});
+		document.getElementById("button7").addEventListener("click", function() {
+			window.open("https://zoom.us/j/9924776146?pwd=6492");
+		});
+		document.getElementById("button8").addEventListener("click", function() {
+			window.open("https://zoom.us/j/8213272101?pwd=5279");
+		});
+		document.getElementById("button9").addEventListener("click", function() {
+			window.open("https://zoom.us/j/9462506893?pwd=5504");
+		});
+		document.getElementById("button10").addEventListener("click", function() {
+			window.open("https://zoom.us/j/7374117574?pwd=5273");
+		});
+		document.getElementById("button11").addEventListener("click", function() {
+			window.open("https://zoom.us/j/6262973774?pwd=5372");
+		});
+		document.getElementById("button12").addEventListener("click", function() {
+			window.open("https://zoom.us/j/3944085571?pwd=4258");
+		});
+		document.getElementById("button13").addEventListener("click", function() {
+			window.open("https://zoom.us/j/3053347069?pwd=4973");
+		});
+		document.getElementById("button14").addEventListener("click", function() {
+			window.open("pdf/remote.pdf");
+		});
+</script>
+</html>
+
